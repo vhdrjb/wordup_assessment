@@ -1,0 +1,9 @@
+targets:
+  $default:
+    builders:
+      injectable_generator:injectable_builder:
+        options:
+          auto_register: true
+          class_name_pattern:
+            "Repository$|Bloc$|UseCase$|Provider$"
+          file_name_pattern: "_repository$|_bloc$|_use_case$|_provider$"
